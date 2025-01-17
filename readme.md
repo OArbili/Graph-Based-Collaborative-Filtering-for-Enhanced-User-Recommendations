@@ -13,7 +13,7 @@ The model introduces:
 ## Requirements
 
 ```bash
-torch>=1.7.0
+torch>=2.5.1
 numpy>=1.19.2
 scipy>=1.6.0
 configparser>=5.0.0
