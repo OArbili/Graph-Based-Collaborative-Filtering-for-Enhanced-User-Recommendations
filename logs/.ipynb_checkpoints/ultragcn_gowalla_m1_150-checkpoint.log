@@ -1,0 +1,18 @@
+###################### UltraGCN Plus Plus ######################
+./configs/ultragcn_gowalla_m1.ini
+torch.cuda.is_available() True
+cuda
+load path = ./gowalla_ii_constraint_mat object
+load path = ./gowalla_ii_neighbor_mat object
+load path = ./gowalla_rec_i_64 object
+load path = ./gowalla_rec_u_64 object
+Load Configuration OK, show them below
+Configuration:
+{'embedding_dim': 64, 'ii_neighbor_num': 10, 'model_save_path': './ultragcn_gowalla.pt', 'max_epoch': 2000, 'enable_tensorboard': True, 'initial_weight': 0.0001, 'dataset': 'gowalla', 'gpu': '0', 'device': device(type='cuda'), 'lr': 0.0001, 'batch_size': 512, 'early_stop_epoch': 100, 'w1': 1e-06, 'w2': 1.0, 'w3': 1e-06, 'w4': 1.0, 'negative_num': 150, 'negative_weight': 50.0, 'gamma': 0.0001, 'lambda': 0.0005, 'sampling_sift_pos': False, 'test_batch_size': 2048, 'topk': 20, 'user_num': 29858, 'item_num': 40981}
+start load weight
+torch.Size([29858, 64])
+torch.Size([40981, 64])
+cuda
+Total training batches = 1583
+The time for epoch 0 is: train time = 00: 00: 45, test time = 00: 00: 07
+Loss = 90.42313, F1-score: 0.030232 	 Precision: 0.02041	 Recall: 0.05824	NDCG: 0.04995

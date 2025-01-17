@@ -1,0 +1,31 @@
+###################### UltraGCN Plus Plus ######################
+./configs/ultragcn_amazonbooks_m1-100.ini
+torch.cuda.is_available() True
+cuda
+Computing \Omega for the item-item graph... 
+1
+2
+3
+4
+i-i constraint matrix 0 ok
+i-i constraint matrix 15000 ok
+i-i constraint matrix 30000 ok
+i-i constraint matrix 45000 ok
+i-i constraint matrix 60000 ok
+i-i constraint matrix 75000 ok
+i-i constraint matrix 90000 ok
+Computation \Omega OK!
+store object in path = ./amazon_ii_neighbor_mat ok
+store object in path = ./amazon_ii_constraint_mat ok
+store object in path = ./amazon_rec_i_64 ok
+store object in path = ./amazon_rec_u_64 ok
+Load Configuration OK, show them below
+Configuration:
+{'embedding_dim': 64, 'ii_neighbor_num': 10, 'model_save_path': './ultragcn_amazon.pt', 'max_epoch': 2000, 'enable_tensorboard': True, 'initial_weight': 0.0001, 'dataset': 'amazon', 'gpu': '0', 'device': device(type='cuda'), 'lr': 0.001, 'batch_size': 1024, 'early_stop_epoch': 15, 'w1': 1e-08, 'w2': 1.0, 'w3': 1.0, 'w4': 1e-08, 'negative_num': 100, 'negative_weight': 100.0, 'gamma': 0.0001, 'lambda': 2.75, 'sampling_sift_pos': False, 'test_batch_size': 2048, 'topk': 20, 'user_num': 52643, 'item_num': 91599}
+start load weight
+torch.Size([52643, 64])
+torch.Size([91599, 64])
+cuda
+Total training batches = 2325
+The time for epoch 0 is: train time = 00: 03: 15, test time = 00: 01: 04
+Loss = 51.61254, F1-score: 0.009544 	 Precision: 0.00708	 Recall: 0.01462	NDCG: 0.01175

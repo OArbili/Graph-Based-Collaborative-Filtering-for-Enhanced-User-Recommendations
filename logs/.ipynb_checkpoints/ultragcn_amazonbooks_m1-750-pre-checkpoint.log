@@ -1,0 +1,21 @@
+###################### UltraGCN Plus Plus ######################
+./configs/ultragcn_amazonbooks_m1-750-pre.ini
+torch.cuda.is_available() True
+cuda
+load path = ./amazon_ii_constraint_mat object
+load path = ./amazon_ii_neighbor_mat object
+Load Configuration OK, show them below
+Configuration:
+{'embedding_dim': 64, 'ii_neighbor_num': 10, 'model_save_path': './ultragcn_amazon.pt', 'max_epoch': 2000, 'enable_tensorboard': True, 'initial_weight': 0.0001, 'dataset': 'amazon', 'gpu': '0', 'device': device(type='cuda'), 'lr': 0.001, 'batch_size': 1024, 'early_stop_epoch': 15, 'w1': 1e-08, 'w2': 1.0, 'w3': 1.0, 'w4': 1e-08, 'negative_num': 750, 'negative_weight': 500.0, 'gamma': 0.0001, 'lambda': 2.75, 'sampling_sift_pos': False, 'test_batch_size': 2048, 'topk': 20, 'user_num': 52643, 'item_num': 91599}
+start load weight
+torch.Size([52643, 64])
+torch.Size([91599, 64])
+end load weight
+cuda
+Total training batches = 2325
+The time for epoch 0 is: train time = 00: 03: 21, test time = 00: 00: 39
+Loss = 51.15153, F1-score: 0.010266 	 Precision: 0.00732	 Recall: 0.01720	NDCG: 0.01327
+The time for epoch 5 is: train time = 00: 03: 20, test time = 00: 00: 37
+Loss = 521.86621, F1-score: 0.020056 	 Precision: 0.01453	 Recall: 0.03235	NDCG: 0.02669
+The time for epoch 10 is: train time = 00: 03: 18, test time = 00: 00: 33
+Loss = 550.84973, F1-score: 0.027929 	 Precision: 0.02003	 Recall: 0.04611	NDCG: 0.03762

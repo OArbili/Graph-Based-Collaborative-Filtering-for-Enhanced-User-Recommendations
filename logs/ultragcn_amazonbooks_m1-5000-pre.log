@@ -1,0 +1,31 @@
+###################### UltraGCN Plus Plus ######################
+./configs/ultragcn_amazonbooks_m1-5000-pre.ini
+torch.cuda.is_available() True
+cuda
+load path = ./amazon_ii_constraint_mat object
+load path = ./amazon_ii_neighbor_mat object
+Load Configuration OK, show them below
+Configuration:
+{'embedding_dim': 64, 'ii_neighbor_num': 10, 'model_save_path': './ultragcn_amazon.pt', 'max_epoch': 2000, 'enable_tensorboard': True, 'initial_weight': 0.0001, 'dataset': 'amazon', 'gpu': '0', 'device': device(type='cuda'), 'lr': 0.001, 'batch_size': 1024, 'early_stop_epoch': 15, 'w1': 1e-08, 'w2': 1.0, 'w3': 1.0, 'w4': 1e-08, 'negative_num': 5000, 'negative_weight': 500.0, 'gamma': 0.0001, 'lambda': 2.75, 'sampling_sift_pos': False, 'test_batch_size': 2048, 'topk': 20, 'user_num': 52643, 'item_num': 91599}
+start load weight
+torch.Size([52643, 64])
+torch.Size([91599, 64])
+end load weight
+cuda
+Total training batches = 2325
+The time for epoch 0 is: train time = 00: 05: 50, test time = 00: 00: 34
+Loss = 50.29306, F1-score: 0.010250 	 Precision: 0.00733	 Recall: 0.01706	NDCG: 0.01336
+The time for epoch 5 is: train time = 00: 05: 28, test time = 00: 00: 40
+Loss = 523.88733, F1-score: 0.020193 	 Precision: 0.01464	 Recall: 0.03252	NDCG: 0.02664
+The time for epoch 10 is: train time = 00: 05: 43, test time = 00: 00: 40
+Loss = 561.42340, F1-score: 0.028575 	 Precision: 0.02045	 Recall: 0.04742	NDCG: 0.03860
+The time for epoch 15 is: train time = 00: 05: 37, test time = 00: 00: 39
+Loss = 549.47937, F1-score: 0.034220 	 Precision: 0.02438	 Recall: 0.05740	NDCG: 0.04730
+The time for epoch 20 is: train time = 00: 05: 44, test time = 00: 00: 35
+Loss = 587.34363, F1-score: 0.037587 	 Precision: 0.02669	 Recall: 0.06353	NDCG: 0.05221
+The time for epoch 25 is: train time = 00: 05: 33, test time = 00: 00: 35
+Loss = 606.80560, F1-score: 0.039060 	 Precision: 0.02770	 Recall: 0.06624	NDCG: 0.05438
+The time for epoch 30 is: train time = 00: 05: 21, test time = 00: 00: 39
+Loss = nan, F1-score: 0.000784 	 Precision: 0.00062	 Recall: 0.00108	NDCG: 0.00089
+The time for epoch 35 is: train time = 00: 05: 33, test time = 00: 00: 30
+Loss = nan, F1-score: 0.000784 	 Precision: 0.00062	 Recall: 0.00108	NDCG: 0.00089

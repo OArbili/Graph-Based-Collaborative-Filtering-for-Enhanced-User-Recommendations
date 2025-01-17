@@ -1,0 +1,30 @@
+###################### UltraGCN Plus Plus ######################
+./configs/ultragcn_gowalla_m1.ini
+torch.cuda.is_available() True
+cuda
+load path = ./gowalla_ii_constraint_mat object
+load path = ./gowalla_ii_neighbor_mat object
+load path = ./gowalla_rec_i_64 object
+load path = ./gowalla_rec_u_64 object
+Load Configuration OK, show them below
+Configuration:
+{'embedding_dim': 64, 'ii_neighbor_num': 10, 'model_save_path': './ultragcn_gowalla.pt', 'max_epoch': 2000, 'enable_tensorboard': True, 'initial_weight': 0.0001, 'dataset': 'gowalla', 'gpu': '0', 'device': device(type='cuda'), 'lr': 0.0001, 'batch_size': 512, 'early_stop_epoch': 100, 'w1': 1e-06, 'w2': 1.0, 'w3': 1e-06, 'w4': 1.0, 'negative_num': 2500, 'negative_weight': 300.0, 'gamma': 0.0001, 'lambda': 0.0005, 'sampling_sift_pos': False, 'test_batch_size': 2048, 'topk': 20, 'user_num': 29858, 'item_num': 40981}
+start load weight
+torch.Size([29858, 64])
+torch.Size([40981, 64])
+cuda
+Total training batches = 1583
+The time for epoch 0 is: train time = 00: 00: 53, test time = 00: 00: 07
+Loss = 88.42314, F1-score: 0.028795 	 Precision: 0.01951	 Recall: 0.05495	NDCG: 0.04748
+The time for epoch 5 is: train time = 00: 00: 53, test time = 00: 00: 07
+Loss = 69.79950, F1-score: 0.041039 	 Precision: 0.02730	 Recall: 0.08262	NDCG: 0.07231
+The time for epoch 10 is: train time = 00: 00: 53, test time = 00: 00: 07
+Loss = 92.52682, F1-score: 0.024611 	 Precision: 0.01693	 Recall: 0.04502	NDCG: 0.03983
+The time for epoch 15 is: train time = 00: 00: 53, test time = 00: 00: 07
+Loss = 62.37967, F1-score: 0.022370 	 Precision: 0.01548	 Recall: 0.04033	NDCG: 0.03473
+The time for epoch 20 is: train time = 00: 00: 53, test time = 00: 00: 07
+Loss = 43.19456, F1-score: 0.023439 	 Precision: 0.01629	 Recall: 0.04180	NDCG: 0.03522
+The time for epoch 25 is: train time = 00: 00: 53, test time = 00: 00: 07
+Loss = 31.93213, F1-score: 0.026424 	 Precision: 0.01837	 Recall: 0.04703	NDCG: 0.03814
+The time for epoch 30 is: train time = 00: 00: 53, test time = 00: 00: 07
+Loss = 32.83462, F1-score: 0.035633 	 Precision: 0.02417	 Recall: 0.06777	NDCG: 0.04987

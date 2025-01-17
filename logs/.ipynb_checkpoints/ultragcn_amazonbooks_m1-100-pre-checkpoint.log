@@ -1,0 +1,4 @@
+###################### UltraGCN Plus Plus ######################
+./configs/ultragcn_amazonbooks_m1-100-pre.ini
+torch.cuda.is_available() True
+cuda

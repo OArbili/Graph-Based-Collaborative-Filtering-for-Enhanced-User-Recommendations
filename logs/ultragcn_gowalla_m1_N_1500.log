@@ -1,0 +1,4 @@
+###################### UltraGCN Plus Plus ######################
+./configs/ultragcn_gowalla_m1_N_1500.ini
+torch.cuda.is_available() True
+cuda
