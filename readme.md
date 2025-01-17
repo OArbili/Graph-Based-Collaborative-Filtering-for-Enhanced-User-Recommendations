@@ -130,7 +130,7 @@ Testing Parameters:
 
 ## Performance
 
-The model shows significant improvements over UltraGCN:
+The model shows an improvements over UltraGCN:
 
 Amazon-Book:
 - Recall@20: 0.0694 (1.91% improvement)
