@@ -54,7 +54,9 @@ def sapling(M,projection):
     return B
 
 t1 = time.time()
-
+###
+# Remove comments to initialize model weights before training phase
+###
 # data = "AmazonBooks_m1"
 # N_users, N_items, M, train, test = utils.read_data(data)
 # M = M.astype(np.float32)
